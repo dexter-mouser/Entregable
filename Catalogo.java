@@ -10,5 +10,32 @@ public class Catalogo {
         int totalArticulos = 0;
         int cantidadPremium = 0;
         int opcionMenu = 0;
-        Sysout.println("Catalogo de productos");
+        System.out.println("Catalogo de productos");
+        //ciclo do-while
+        do{
+            System.out.println("-----MENU DE PRODUCTOS-----");
+            System.out.println("1. Producto Basico --$15000");
+            System.out.println("2. Producto Medio ---$35000");
+            System.out.println("3. Producto Premium -$60000");
+            System.out.println("4. ----Finalizar compra----");
+            System.out.print("Seleccione una opcion: ");
+            //
+            if (opcionMenu == 1) {
+                totalBruto += PRECIO_BASICO;
+                totalArticulos++;
+                
+                } else if (opcionMenu == 2) {
+                totalBruto += PRECIO_MEDIO;
+                totalArticulos++;
+                
+                } else if (opcionMenu == 3) {
+                totalBruto += PRECIO_PREMIUM;
+                totalArticulos++;
+                
+                cantidadPremium++; // 
+                
+                } else if (opcionMenu == 4) {
+                } else {}
+            } while (opcionMenu != 4);
+            }
     }
